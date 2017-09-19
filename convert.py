@@ -14,9 +14,6 @@ Description:
 Author:
     Abhijit Bansal
 
-Copyright:
-    (C) 2016 Faraday Future
-
 """
 from math import radians, cos, sin, asin, sqrt, atan2, degrees
 
