@@ -19,12 +19,15 @@ import googlemaps
 from datetime import datetime
 
 import math
+
+import os
+
 import road_lib
 
 from convert import calc_centre_lane
 import polyline
 
-gmaps = googlemaps.Client(key='AIzaSyCHDHUGzAhKsViuASECNblUNA69545Hr5Y')
+gmaps = googlemaps.Client(key=os.environ.get('API_Key'))
 
 # Geocoding an address
 geocode_result = gmaps.geocode('1600 Amphitheatre Parkway, Mountain View, CA')
